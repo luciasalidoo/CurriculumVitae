@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import styles from './LoadingScreen.module.css';
 
 export const LoadingScreen = ({ onComplete }) => {
     const [text, setText] = useState("");
@@ -24,12 +25,12 @@ export const LoadingScreen = ({ onComplete }) => {
     }, [onComplete]);
 
     return (
-        <div className="fixed inset-0 bg-black z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
-        <div className="mb-4 text-4xl font-mono font-bold">
-            {text} <span className="animate-blink ml-l"> | </span>
+        <div className={styles.container}>
+        <div className={styles.text}>
+            {text} <span className={styles.cursor}> | </span>
         </div>
-        <div className="w-[200px] h-[2px] bg-gray-100 rounded-relative overflow-hidden">
-            <div className="w-[40%] h-full bg-blue-500 shadow-[0_0_15px_#3b82f6] animate-loading-bar"></div>
+        <div className={styles.hamburguerBar}>
+            <div className={styles.hamburguer}></div>
         </div>   
     </div>
     );

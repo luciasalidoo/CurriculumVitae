@@ -1,0 +1,14 @@
+.container {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  transition: opacity 700ms ease;
+}
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}

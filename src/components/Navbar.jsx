@@ -1,15 +1,41 @@
+
+import { useState, useEffect } from 'react';
+import styles from './Navbar.module.css';
+
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
-    return <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
-        <div className="max-w-5xl mx-auto px-4">
-            <div className="flex justify-between items-center h-16">
-                <a href="#home" className="text-xl font-bold font-mono text-white-100"> 
+    return <nav className={styles.navbar}>
+        <div className={styles.container}>
+            <div className={styles.navContent}>
+                <a href="#home" className={styles.logo}> 
                     {" "}luciiasalidoo_{" "}
                 </a>
 
-                <div className="w-7 h-5 relative cursor-pointer z-40 md:hidden" 
-                onClick={() => setMenuOpen(prev => !prev)}>
+                <div className={styles.menuIcon} onClick={() => setMenuOpen((prev) => !prev)}>
                     &#9776;
                 </div>
+                <div className={styles.navLinks}>
+                    <a href="#about" className={styles.link}> 
+                        {" "} 
+                        About 
+                        {" "} 
+                    </a>
+                    <a href="#home" className={styles.link}> 
+                        {" "} 
+                        Home 
+                        {" "} 
+                    </a>
+                    <a href="#projects" className={styles.link}> 
+                        {" "} 
+                        Projects 
+                        {" "} 
+                    </a>
+                    <a href="#contact" className={styles.link}> 
+                        {" "} 
+                        Contact 
+                        {" "} 
+                    </a>
+                </div>
+
             </div>
         </div>
     </nav>

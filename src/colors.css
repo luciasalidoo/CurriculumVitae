@@ -1,0 +1,14 @@
+* {
+    --bg-color: #2a1519;
+    
+    --navbar-bg-color: #2a1519;
+    --navbar-border-color: #ffffff1a;
+    --navbar-shadow-color: rgba(42, 21, 25, 0.3);
+    
+    --logo-color: #f3f4f6;
+    --link-color: #d1d5db;
+    --link-hover-color: #ffffff;
+
+    --loading-bar-color: #1269f7;
+    --loading-bar-color-shadow: #3b82f6;
+}
