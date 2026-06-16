@@ -26,7 +26,7 @@
   font-size: 1.25rem;
   font-weight: 700;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  color: var(--logo-color);
+  color: var(--navbar-items-color);
   text-decoration: none;
 }
 
@@ -34,7 +34,7 @@
   width: 1.75rem;
   height: 1.25rem;
   position: relative;
-
+  color: var(--navbar-items-color);
   cursor: pointer;
   z-index: 40;
 }

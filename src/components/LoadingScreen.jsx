@@ -29,8 +29,8 @@ export const LoadingScreen = ({ onComplete }) => {
         <div className={styles.text}>
             {text} <span className={styles.cursor}> | </span>
         </div>
-        <div className={styles.hamburguerBar}>
-            <div className={styles.hamburguer}></div>
+        <div className={styles.loadingBar}>
+            <div className={styles.loading}></div>
         </div>   
     </div>
     );

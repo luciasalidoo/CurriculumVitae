@@ -32,7 +32,7 @@
 .loadingBar {
   width: 200px;
   height: 2px;
-  background-color: #f3f4f6;
+  background-color: var(--loading-bar-color);
   border-radius: 9999px;
   overflow: hidden;
 }
@@ -40,8 +40,8 @@
 .loading {
   width: 40%;
   height: 100%;
-  background-color: --loading-bar-color;
-  box-shadow: 0 0 15px --loading-bar-color-shadow;
+  background-color: var(--loading-bar-color-progress);
+  box-shadow: 0 0 15px var(--loading-bar-color-shadow);
 
   animation: loadingBar 1.5s ease-in-out infinite;
 }

@@ -1,14 +1,16 @@
 * {
-    --bg-color: #2a1519;
+    --bg-color: rgb(0, 0, 0);
+    --text-color: #f3f4f6;
     
-    --navbar-bg-color: #2a1519;
-    --navbar-border-color: #ffffff1a;
-    --navbar-shadow-color: rgba(42, 21, 25, 0.3);
+    --navbar-bg-color: rgb(0, 0, 0);
+    --navbar-border-color: rgba(255, 255, 255, 0.102);
+    --navbar-shadow-color: rgba(138, 138, 138, 0.3);
+    --navbar-items-color: #f3f4f6;
     
-    --logo-color: #f3f4f6;
     --link-color: #d1d5db;
     --link-hover-color: #ffffff;
 
-    --loading-bar-color: #1269f7;
-    --loading-bar-color-shadow: #3b82f6;
+    --loading-bar-color: #f3f4f6;
+    --loading-bar-color-progress:rgb(115, 62, 184);
+    --loading-bar-color-shadow: #a763ff;
 }

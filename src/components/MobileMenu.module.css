@@ -1,0 +1,65 @@
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 300ms ease-in-out;
+}
+
+.menuOpen {
+  height: 100vh;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menuClosed {
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+
+  font-size: 1.875rem;
+  color: white;
+
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.closeButton:focus {
+  outline: none;
+}
+
+.menuLink {
+  font-size: 1.5rem;      
+  font-weight: 600;       
+  color: var(--text-color);           
+
+  margin: 1rem 0;         
+
+  transition:
+    transform 300ms ease,
+    opacity 300ms ease;
+}
+
+.menuLinkVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menuLinkHidden {
+  opacity: 0;
+  transform: translateY(-1.25rem);
+}
