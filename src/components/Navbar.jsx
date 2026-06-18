@@ -12,7 +12,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
         <div className={styles.container}>
             <div className={styles.navContent}>
                 <a href="#home" className={styles.logo}> 
-                    {" "}Lucía{" "}
+                    {" "}L{" "}
                 </a>
 
                 <div className={styles.menuIcon} onClick={() => setMenuOpen(prev => !prev)}>
